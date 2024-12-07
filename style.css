@@ -133,7 +133,6 @@ main{
   
   .h1 {
     font-family: 'Bebas Neue', sans-serif;
-
     margin-bottom: 10%;
     padding-left: 0px;
   }
@@ -156,7 +155,7 @@ main{
   
   ul {
     list-style-type: none;
-    padding: 0;
+    padding: 1px;
   }
   
   li {
