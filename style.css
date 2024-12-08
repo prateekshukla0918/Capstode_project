@@ -162,3 +162,43 @@ main{
     margin-bottom: 10px;
   }
   
+  .scrollable-grid {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px; /* Optional, for space between grid items */
+  }
+  
+  .grid-item {
+    min-width: 200px; /* Adjust to the size you want for each item */
+    height: 150px;    /* Adjust height */
+    background-color: #3498db; /* Example background color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+  }
+  .scrollable-grid {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    scrollbar-width: thin; /* For Firefox, you can use 'thin' or 'none' */
+    scrollbar-color: transparent transparent; /* For Firefox, this hides the scrollbar */
+  }
+  
+  .scrollable-grid::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+    height: 8px; /* Adjust the height of the scrollbar (for horizontal scroll) */
+  }
+  
+  .scrollable-grid::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Makes the thumb transparent */
+    border-radius: 10px;
+  }
+  
+  .scrollable-grid::-webkit-scrollbar-track {
+    background-color: transparent; /* Makes the track transparent */
+  }
