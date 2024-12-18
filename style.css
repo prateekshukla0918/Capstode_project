@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  cursor:auto;
 }
 
 body {
@@ -58,6 +59,13 @@ h1 {
   color: black;
   font-family: Bebas Neue;
 }
+.navbar a:hover{
+  font-size: 2rem;
+  color: #555;
+
+}
+
+
 .pages a{
   margin-left: 20px;
 }
@@ -105,6 +113,13 @@ h1 {
   object-fit: cover;
 }
 
+
+.landing_page img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -126,6 +141,11 @@ h1 {
   object-fit: cover; 
   object-position: center; 
   border-radius: 8px; 
+}
+.project img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .project-info {
@@ -177,6 +197,12 @@ h1 {
   text-decoration-skip-ink: none;
   
 
+}
+.project-info p:hover,
+.content:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .container {
@@ -261,6 +287,12 @@ li {
   align-items: flex-start;
 }
 
+.testimonial-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -333,8 +365,14 @@ li {
   
   border-radius: 0.3125rem;
 } 
+.btt:hover{
+  font-weight: bold;
+  color: #333;
+
+
+}
 @media (max-width: 768px) {
-  /* For tablets */
+  /* tablet */
   .navbar {
     flex-direction: column;
     height: auto;
@@ -351,7 +389,10 @@ li {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px)
+/* phone */
+ {
+
   .navbar {
     flex-direction: column;
     text-align: center;
