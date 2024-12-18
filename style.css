@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,6 +18,8 @@ h1 {
 }
 
 .navbar {
+
+  font-weight: BOLD;
   width: 100%;
   max-width: 1344px;
   height: 80px;
@@ -26,14 +29,46 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  font-family: Bebas Neue;
 }
-
+.navbar span{
+  font-family: Bebas Neue;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
+  
+}
 .navbar a {
+  font-family: Bebas Neue;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+
   text-decoration: none;
   color: black;
+  font-family: Bebas Neue;
+}
+.pages a{
+  margin-left: 20px;
 }
 
 .landing_page {
+  width: 100%;
+  padding: 96px 0px 96px 0px;
+  gap: 48px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+
   width: 100%;
   max-width: 1344px;
   padding: 4.5rem 1rem;
@@ -45,19 +80,26 @@ h1 {
 }
 
 .landing_page h1 {
-  width: 100%;
-  max-width: 1344px;
-  font-family: 'Chivo', sans-serif;
-  font-size: 5rem;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  text-align: center;
+  font-family: Bebas Neue;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 120px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 1344px;
+  height: 120px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000 ;
+
+
+  
 }
 
 .landing_page img {
   width: 100%;
-  max-width: 1344px;
   height: auto;
   border-radius: 22px;
   object-fit: cover;
@@ -106,18 +148,35 @@ h1 {
   text-align: left;
   width: 100%;
 }
+.container-content{
+  color: #000;
+  width: Fill (1,344px)px;
+  height: Hug (400px)px;
+  padding: 96px 0px 96px 0px;
+  gap: 0px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  
+}
 
 .content {
-  width: 100%;
+  width: 900px;
+  height: 208px;
   max-width: 900px;
-  padding: 1rem;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 3rem;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Bebas Neue;
+  font-size: 48px;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 52px;
   letter-spacing: -0.01em;
   text-align: center;
-  margin: 0 auto;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+
 }
 
 .container {
@@ -187,8 +246,10 @@ li {
   background-color: transparent;
 }
 
-/* Testimonial Card */
+
 .testimonial-card {
+  width: 2rem;
+  height: auto;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
   padding: 1.25rem;
@@ -242,67 +303,97 @@ li {
 .fotter {
   display: flex;
   justify-content: space-between;
+  width: Fill (1,344px)px;
+  height: Hug (168px)px;
+  padding: 96px 0px 24px 0px;
+  gap: 24px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  font-weight: bold;
+  padding-left: 75px;
+  padding-right: 75px;
+  font-size: Fixed (288px);
+  
+}
+.fotter span{
+  font-size: 20px
+
 }
 
 .btt {
+  width: Hug (169px)px;
+  height: Hug (48px)px;
+  padding: 12px 24px 12px 24px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border-top: 1px solid #000000;
+  background-color: white;
+  
+  
   border-radius: 0.3125rem;
-}
-
-@media screen and (max-width: 1200px) {
-  .project-grid {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .landing_page h1 {
-      font-size: 5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
+} 
+@media (max-width: 768px) {
+  /* For tablets */
   .navbar {
-      flex-direction: column;
-      height: auto;
-      padding: 1rem;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
   }
 
   .project-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .landing_page h1 {
-      font-size: 3rem;
-  }
-
-  .content {
-      font-size: 2rem;
-  }
-
-  .services {
-      flex-direction: column;
-      align-items: stretch;
-  }
-
-  .service-column {
-      flex-basis: 100%;
-      padding: 1rem 0;
-  }
-
-  .header-row {
-      flex-direction: column;
-      align-items: stretch;
+    font-size: 80px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
   .landing_page h1 {
-      font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project img {
+    height: 150px;
   }
 
   .content {
-      font-size: 1.5rem;
+    font-size: 1rem;
   }
 
-  .testimonial-card {
-      min-width: 100%;
+  .fotter {
+    flex-direction: column;
+    text-align: center;
   }
+}
+
+.fotter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.fotter span {
+  font-size: 16px;
+  font-weight: bold;
 }
