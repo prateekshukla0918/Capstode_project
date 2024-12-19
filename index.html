@@ -3,25 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FIGMA page</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <span>MYPORTFOLIO</span>
-        <div class="pages">
-          <a href="#abc1">HOME</a>
-          <a href="#abc2">PROJECTS</a>
-          <a href="#abc3">ABOUT</a>
-          <a href="#abc4">CONTACT</a>
-        </div>
+    <div class="navbar">
+      <span id="logo">MYPORTFOLIO</span>
+      <div class="pages">
+        <a href="#abc1" id="p1">HOME</a>
+        <a href="#abc2" id="p2">PROJECTS</a>
+        <a href="#abc3" id="p3">ABOUT</a>
+        <a href="#abc4" id="p4">CONTACT</a>
       </div>
-    </header>
+    </div>
+    
     <HR>
-    <section class="landing_page" id="abc1">
+    <section class="home_page" id="abc1">
         <h1>EXPLORE MY PORTFOLIO</h1>
           <img src="/PHOTOS/An abstract low-poly landscape composed of triangular facets in pastel colors featuring stylized geometric mountains against a smooth gradient sky..png" alt="Retro City Skyline">
       </section>
@@ -94,15 +93,15 @@
           </div>
         </div>
       </section>
-      <div class="container-content" id="abc3">
+      <div class="cunt_content" id="abc3">
       <p class="content">I am a passionate designer with a focus on creating visually stunning and user-friendly experiences. My work spans various disciplines including web design, graphic design, and app development.</p>
     </div>
 
-      <div class="container">
-        <div class="header-row">
+      <div class="main-container">
+        <div class="mainrow">
           <h1 class="h1">What I Do</h1>
-          <div class="services">
-            <div class="service-column">
+          <div class="skills">
+            <div class="skills-colom">
               <h2 class="h2">Web Design</h2>
               <ul>
                 <li>App Development</li>
@@ -111,7 +110,7 @@
                 <li>3D Modeling</li>
               </ul>
             </div>
-            <div class="service-column">
+            <div class="skills-colom">
               <h2 class="h2">Graphic Design</h2>
               <ul>
                 <li>Branding</li>
@@ -126,11 +125,11 @@
 
     </main>
 
-    <h1 class="SCROOL-HEADING">WHAT CLIENTS SAY</h1>
+    <h1 class="review-heading">WHAT CLIENTS SAY</h1>
     <br><br>
 
-    <div class="scrollable-grid">
-      <div class="testimonial-card">
+    <div class="scroll">
+      <div class="box">
           <div class="profile">
               <img src="/PHOTOS/A professional-looking individual with dark hair and glasses smiling while wearing a tailored suit, set against a simple backdrop. (1).png" alt="Profile Picture">
               <div class="profile-info">
@@ -138,12 +137,12 @@
                   <div class="title">CEO, TechCorp</div>
               </div>
           </div>
-          <div class="testimonial">
+          <div class="review">
               Amazing work! Highly recommended.
           </div>
       </div>
 
-      <div class="testimonial-card">
+      <div class="box">
           <div class="profile">
               <img src="/PHOTOS/A female designer reviewing graphic design layouts while seated at a modern desk in a stylish office..png" alt="Profile Picture">
               <div class="profile-info">
@@ -151,12 +150,12 @@
                   <div class="title">Creative Director, DesignHub</div>
               </div>
           </div>
-          <div class="testimonial">
+          <div class="review">
               A true professional with a keen eye for design.
           </div>
       </div>
 
-      <div class="testimonial-card">
+      <div class="box">
           <div class="profile">
               <img src="/PHOTOS/profile.png" alt="Profile Picture">
               <div class="profile-info">
@@ -164,12 +163,12 @@
                   <div class="title">Founder, InnovateX</div>
               </div>
           </div>
-          <div class="testimonial">
+          <div class="review">
               Delivered beyond expectations.
           </div>
       </div>
 
-      <div class="testimonial-card">
+      <div class="box">
           <div class="profile">
               <img src="/PHOTOS/A confident woman with shoulder-length blonde hair wearing a stylish blazer sitting at a modern desk in a well-lit office. (1).png" alt="Profile Picture">
               <div class="profile-info">
@@ -177,12 +176,12 @@
                   <div class="title">Marketing Manager, BrandWave</div>
               </div>
           </div>
-          <div class="testimonial">
+          <div class="review">
               Exceptional quality and attention to detail.
           </div>
       </div>
 
-      <div class="testimonial-card">
+      <div class="box">
         <div class="profile">
             <img src="/PHOTOS/https://via.placeholder.com/50" alt="Profile Picture">
             <div class="profile-info">
@@ -190,11 +189,11 @@
                 <div class="title">UI/UX Designer , IIT Delhi</div>
             </div>
         </div>
-        <div class="testimonial">
+        <div class="review">
           A true professional with a keen eye for design.
         </div>
     </div>
-    <div class="testimonial-card" id="a1">
+    <div class="box" id="a1">
       <div class="profile">
           <img src="/PHOTOS/https://via.placeholder.com/50" alt="Profile Picture">
           <div class="profile-info">
@@ -202,7 +201,7 @@
               <div class="title">Backend-devloper, Scaler</div>
           </div>
       </div>
-      <div class="testimonial">
+      <div class="review">
         Their technical expertise and attention to detail truly set them apart.
       </div>
   </div>
